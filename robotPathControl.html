@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RobotPathControl</title>
+    <link rel="stylesheet" href="RobotPath.css"/>
+    <script  src="jquery-3.7.0.min.js" ></script>
+    <script   src="robotPath.js"></script>
+</head>
+<body>
+
+    
+        <fieldset> 
+            
+    <button type="submit" class="button-1" id="SetPathNum" >set Path</button>   
+   <input type="number" id="PathNumInput" placeholder="Path Number" min="0"  value="" />  
+
+    <button type="submit" class="button-1" id="r-submit" autocomplete="off" >Right</button>
+    <input type="text" id="r-Coordination" name="r-Coordination" size="10" placeholder="CM">
+    
+    <button type="submit" class="button-1" id="L-submit" >Left</button>
+    <input type="text" id="L-Coordination"  size="10"placeholder="CM">
+
+    <button type="submit" class="button-1" id="F-submit" >Forward</button>
+    <input type="text" id="F-Coordination"  size="10"placeholder="CM">
+
+    <button type="submit" class="button-1" id="B-submit" >Backward</button>
+    <input type="text" id="B-Coordination"  size="10" placeholder="CM">
+
+    <button  type="submit" class="button-1" id="Restart" >Restart</button>
+    <button  type="submit" class="button-1" id="save" >Save Path</button>
+    
+        </fieldset>
+
+        <canvas id="myCanvas" style="background-color: rgb(193, 191, 191);" width="500" height="500"></canvas>
+
+
+
+</body>
+</html>
